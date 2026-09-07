@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C Programming Viva — Voice Station</title>
+<style>
+  :root {
+    --ink: #1c2733;
+    --paper: #f6f4ee;
+    --panel: #ffffff;
+    --rule: #d8d3c4;
+    --teal: #3e6b64;
+    --muted: #6b7280;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 560px;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 40px 44px;
+    text-align: center;
+  }
+  .eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--teal);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin: 0 0 28px;
+  }
+  .instructions {
+    text-align: left;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .instructions ol { margin: 0; padding-left: 20px; }
+  .widget-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0 4px;
+  }
+  .footer-note {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 24px;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="eyebrow">Programming for Problem Solving — C</div>
+  <h1>Lab Viva — Voice Station</h1>
+  <p class="subtitle">Speak your answers clearly into the microphone when prompted.</p>
+
+  <div class="instructions">
+    <strong>Before you start:</strong>
+    <ol>
+      <li>Allow microphone access when your browser asks.</li>
+      <li>Press "Start a call" below and state your roll number when asked.</li>
+      <li>Answer each question aloud — you'll hear a follow-up if needed.</li>
+      <li>When the agent says the viva is complete, raise your hand for the next station.</li>
+    </ol>
+  </div>
+
+  <div class="widget-wrap">
+    <!-- Replace YOUR_AGENT_ID with your actual ElevenLabs agent ID -->
+    <elevenlabs-convai agent-id="agent_6901m1hg8cc5faqb2499n5a2na8x&branch_id=agtbrch_6001m1hg8ccgfb6snzqnhqywmqdw"></elevenlabs-convai>
+  </div>
+
+  <p class="footer-note">Department of Computer Science and Engineering</p>
+</div>
+
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+</body>
+</html>
